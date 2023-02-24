@@ -1,44 +1,26 @@
 * {
     margin: 0;
 }
-.header img {
-    float: left;
-    height: 50px;
-    align-items: center;
-    padding: 20px 40px;
 
-}
 .navbar {
+    background: rgba(0, 0, 0, 0.6);
     background-color: #0f8b8d;
-    padding: 30px 80px 40px 0;
-    column-gap: 30px;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
 }
-
+.navbar img {
+    width: 300px;
+    height: auto;
+}
 .navbar li {
-    display: inline;
-    list-style: none;
-    margin-right: 20px;
-    width: 10px;
+   
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
 }
 .navbar a {
-    font-size: 18px;
-    font-weight: 400px;
     text-decoration: none;
     color: white;
-    margin-top: 30px;
-}
-/* end */
-
-.top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url("img/Coffe Header.png");
-    background-size: cover;
-    color: white;
-}
-.container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-    font-family: "tilt Wrap" ;
+    font-size: 18px;
 }
