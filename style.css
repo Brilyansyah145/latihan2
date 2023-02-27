@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -23,4 +25,281 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
+}
+/* section untuk gambar kopi */
+#coffee {
+    width: 100%;
+    height: 100vh;
+    background: url(img/Coffe\ Header.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+#title {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+/* membuat artikelnya */
+#summary {
+    padding: 50px 180px;
+}
+#content1 {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+#content1-stats h1 {
+    font-size: 35px;
+}
+
+#content1-stats div {
+    width: 205px;
+    height:5px;
+    background-color:#FBBC04;
+    margin-bottom: 20px;
+}
+#content1 img {
+    border-radius: 10px;
+}
+#content1 h1 {
+    margin-bottom: 30px;
+    color: #0f8b8d;
+}
+
+#content2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    column-gap: 30px;
+}
+#content2 img {
+    height: 220px; 
+    width: 450px;
+    border-radius: 10px;
+}
+#content2-stats h1 {
+    font-size: 35px;
+    color: #0f8b8d;;
+}
+
+#content2-stats div {
+    width: 278px;
+    height:5px;
+    background-color:#FBBC04;
+    margin-bottom: 20px;
+}
+
+#content3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    column-gap: 30px;
+}
+#content3 img {
+    border-radius: 10px;
+}
+#content3-stats h1 {
+    font-size: 35px;
+    color: #0f8b8d;;
+}
+
+#content3-stats div {
+    width: 274px;
+    height:5px;
+    background-color:#FBBC04;
+    margin-bottom: 20px;
+}
+/* end */
+.btn {
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    width: 53%;
+}
+/* btn contact */
+.contact {
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    width: 20%;
+}
+.details {
+    text-decoration: none;
+    color: white;
+    
+}
+/*  */
+#media img {
+    width: 150px; 
+    height: auto;
+}
+
+.section-card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 250px;
+    perspective: 250px;
+}
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 250px;
+    perspective: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 240px;
+    transform: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cover img {
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -30px;
+}
+
+.wrapper {
+    display: flex;
+    transition: all 0.3s;
+    position: absolute;
+    max-height: var(--card-height);
+    width: 25%;
+    z-index: -1;
+    background-color: #4aa1a3;
+    overflow: hidden;
+}
+.card:hover .wrapper {
+    filter: blur(2px);
+}
+
+.details {
+    width: 100%;
+    transition: all 0.3s;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    
+}
+.card:hover .details {
+    padding-top: 3px;
+    transform: translate3d(0%, 200px, 100px);
+}
+
+.character {
+
+    width: 50%;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+}
+.card:hover .character {
+    opacity: 1;
+    width: 100%;
+    transform: translate3d(0% -30%, 200px);
+}
+h2 {
+    margin-bottom: -10px;
+}
+p {
+    font-size: 18px;
+}
+/* product-end */
+
+/* store */
+.main {
+    padding: 50px 180px;
+}
+#info {
+    color: #0f8b8d;
+}
+.main-info {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* contact */
+#contact {   
+    padding: 50px 180px;
+}
+#contact h1 {
+    text-align: center;
+    color: #0f8b8d;
+    font-size: 35px;
+    padding: 20px 0 30px 0;
+}
+#form {
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 50px;
+}
+.daftar-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}  
+.daftar-form h4 {
+    width: 40%;
+}
+input {
+    width: 50%;
+    height: 30px;
+    padding: 1px 2px;
+}
+textarea {
+    width: 50%;
+    height: 120px;
+    padding: 1px 2px;
+    resize: none;
+}
+
+/* footer */
+footer {
+    background-color: #0f8b8d;
+    padding: 20px 60px 20px 60px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+#footer img {
+    width: 300px;
+    height: auto;
+}
+ul {
+    list-style-type: none;
 }
